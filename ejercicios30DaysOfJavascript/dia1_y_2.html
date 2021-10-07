@@ -7,7 +7,7 @@
     <title>30 days</title>
   </head>
   <body>
-    <h1>Ejercicios Javascript Abel García García</h1>
+    <h1>Ejercicios 30DaysOfJavaScript (Dia 1 y 2)</h1>
     <h2>Ejercicio A-1</h2>
     <form>
       <label for="number1">Introduce un número: </label>
@@ -91,8 +91,11 @@
 
       elementoCampoTexto.onchange = ejercicioA3;
       function ejercicioA3() {
-        console.log(campoTexto.search());
+        /^[0-5][1-9]{3}[0-9]$/.test(campoTexto);
+        console.log(/^[0-5][1-9]{3}[0-9]$/.test(campoTexto));
       }
     </script>
+    <br /><br />
+    <a href="../index.html">Volver</a>
   </body>
 </html>

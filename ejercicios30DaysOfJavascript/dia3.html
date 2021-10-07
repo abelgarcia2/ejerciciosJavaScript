@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 3</title>
+  </head>
+  <body>
+    <h1>Ejercicios 30DaysOfJavaScript (Dia 3)</h1>
+    <h2></h2>
+    <form>
+      <label for="pass">Introduce una contraseña: </label>
+      <input type="password" id="pass" />
+      <input type="button" value="Enviar" id="btn" /><br /><br />
+      <input type="checkbox" id="mayus" />
+      <label for="mayus"
+        >La contraseña debe contener mayúculas y minúsculas.</label
+      ><br />
+      <input type="checkbox" id="nums" />
+      <label for="nums">La contraseña debe contener números.</label><br />
+      <input type="checkbox" id="raros" />
+      <label for="raros">La contraseña debe contener símbolos raros.</label
+      ><br />
+      <label for="minCaracter"
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minímo nº de caracteres:
+      </label>
+      <input type="number" id="minCaracter" name="number" size="3" />
+      <br /><br />
+      <div id="resultado">AAAAAA</div>
+    </form>
+
+    <script>
+      let btn = document.getElementById('btn');
+      let pass = document.getElementById('pass');
+      let mayus = document.getElementById('mayus');
+      let nums = document.getElementById('nums');
+      let raros = document.getElementById('raros');
+      let minCaracter = document.getElementById('minCaracter');
+
+      const regexpMayus = /[A-Z]/;
+      const regexpNums = /[0-9]/;
+      const regexpRaros = /\W/;
+
+      let msg;
+
+      let opc;
+
+      btn.onclick = () => {
+          
+      };
+    </script>
+  </body>
+</html>
