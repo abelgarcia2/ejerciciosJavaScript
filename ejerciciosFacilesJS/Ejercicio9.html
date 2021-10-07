@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+  </head>
+  <body>
+    <h1>Ejercicio 9</h1>
+    <script>
+      var arr = [
+        [true, false, true],
+        'Jose',
+        {
+          nombre: 'Manzana',
+          precio: {
+            iva: 5.6,
+            sinIva: 2.6,
+          },
+        },
+        true,
+        function () {
+          return 'Hola mundo';
+        },
+        function (nombre) {
+          return 'Hola ' + nombre;
+        },
+        [4, 5, 6],
+      ];
+      console.log(arr);
+      console.log(arr[5]('Pepe'));
+      console.log(arr[0].length);
+      console.log(arr[2].precio.iva);
+      console.log(arr[arr.length - 1].map((i) => i * 2));
+    </script>
+    <a href="../index.html">Volver</a>
+  </body>
+</html>
